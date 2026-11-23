@@ -1,21 +1,21 @@
 {
   "model_name": "aqi-xgboost-champion",
-  "version": "3",
+  "version": "6",
   "alias": "champion",
-  "trained_at": "2026-11-02T15:30:54.684413+00:00",
+  "trained_at": "2026-11-23T17:54:41.553609+00:00",
   "metrics": {
-    "accuracy": 0.9506925207756233,
-    "f1_macro": 0.7298272286794001,
+    "accuracy": 0.9543786051389617,
+    "f1_macro": 0.8283746753105692,
     "f1_per_class": {
-      "Good": 0.48554913294797686,
-      "Moderate": 0.9741053244108234,
+      "Good": 0.6813186813186813,
+      "Moderate": 0.9754306693024569,
       "Unhealthy for Sensitive Groups": 0.0,
       "Unhealthy": 0.0,
       "Very Unhealthy": 0.0
     },
     "support": {
-      "Good": 48,
-      "Moderate": 1757,
+      "Good": 114,
+      "Moderate": 1793,
       "Unhealthy for Sensitive Groups": 0,
       "Unhealthy": 0,
       "Very Unhealthy": 0
@@ -31,13 +31,13 @@
   ],
   "data_range": {
     "start": "2025-10-21T00:00:00-05:00",
-    "end": "2026-11-02T10:00:00-05:00"
+    "end": "2026-11-23T12:00:00-05:00"
   },
   "test_range": {
-    "start": "2026-08-19T00:00:00-05:00",
-    "end": "2026-11-02T04:00:00-05:00"
+    "start": "2026-09-04T20:00:00-05:00",
+    "end": "2026-11-23T06:00:00-05:00"
   },
-  "n_rows": 9059,
+  "n_rows": 9565,
   "feature_names": [
     "pm2_5",
     "pm10",
@@ -93,17 +93,17 @@
     "Moderate"
   ],
   "params": {
-    "n_estimators": 300,
-    "max_depth": 7,
-    "learning_rate": 0.021146536167031597,
-    "subsample": 0.9879639408647978,
-    "colsample_bytree": 0.9162213204002109,
-    "min_child_weight": 3,
-    "reg_lambda": 0.035113563139704075,
-    "gamma": 0.36680901970686763
+    "n_estimators": 200,
+    "max_depth": 9,
+    "learning_rate": 0.14518497439122724,
+    "subsample": 0.8394633936788146,
+    "colsample_bytree": 0.5780093202212182,
+    "min_child_weight": 2,
+    "reg_lambda": 0.014936568554617643,
+    "gamma": 1.7323522915498704
   },
   "seed": 42,
-  "mlflow_run_id": "c838a5ae41064ff5a57e5a0af8481135",
+  "mlflow_run_id": "de532be2461d4e2cb749ae1f255f6331",
   "data_source": "open-meteo",
   "city": "Lima"
 }

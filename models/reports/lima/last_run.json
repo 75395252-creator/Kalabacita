@@ -1,44 +1,44 @@
 {
   "city": "Lima",
-  "promoted": false,
-  "reason": "Rejected: challenger F1 macro 0.7904 vs champion 0.7969 (delta -0.0065 < required +0.0050).",
-  "version": "5",
-  "challenger_f1_macro": 0.7903608524355301,
-  "champion_f1_macro": 0.7968840370156159,
-  "baseline_f1_macro": 0.5897506553334605,
+  "promoted": true,
+  "reason": "Promoted: challenger F1 macro 0.8284 vs champion 0.8230 (delta +0.0054 >= required +0.0050).",
+  "version": "6",
+  "challenger_f1_macro": 0.8283746753105692,
+  "champion_f1_macro": 0.8230081892629664,
+  "baseline_f1_macro": 0.5612666408275696,
   "min_delta": 0.005,
   "n_trials": 30,
   "seed": 42,
   "data_source": "open-meteo",
-  "mlflow_run_id": "fd4e01b229e74f06ac00ba59daa70d44",
+  "mlflow_run_id": "de532be2461d4e2cb749ae1f255f6331",
   "baseline": {
-    "accuracy": 0.9503470368392952,
-    "f1_macro": 0.5897506553334605,
+    "accuracy": 0.9417933927635029,
+    "f1_macro": 0.5612666408275696,
     "f1_per_class": {
-      "Good": 0.20512820512820512,
-      "Moderate": 0.9743731055387159,
+      "Good": 0.15267175572519084,
+      "Moderate": 0.9698615259299485,
       "Unhealthy for Sensitive Groups": 0.0,
       "Unhealthy": 0.0,
       "Very Unhealthy": 0.0
     },
     "support": {
-      "Good": 98,
-      "Moderate": 1775,
+      "Good": 114,
+      "Moderate": 1793,
       "Unhealthy for Sensitive Groups": 0,
       "Unhealthy": 0,
       "Very Unhealthy": 0
     },
     "confusion_matrix": [
       [
-        12,
-        86,
+        10,
+        104,
         0,
         0,
         0
       ],
       [
         7,
-        1768,
+        1786,
         0,
         0,
         0
@@ -67,33 +67,33 @@
     ]
   },
   "challenger": {
-    "accuracy": 0.9466097170315003,
-    "f1_macro": 0.7903608524355301,
+    "accuracy": 0.9543786051389617,
+    "f1_macro": 0.8283746753105692,
     "f1_per_class": {
-      "Good": 0.609375,
-      "Moderate": 0.9713467048710601,
+      "Good": 0.6813186813186813,
+      "Moderate": 0.9754306693024569,
       "Unhealthy for Sensitive Groups": 0.0,
       "Unhealthy": 0.0,
       "Very Unhealthy": 0.0
     },
     "support": {
-      "Good": 98,
-      "Moderate": 1775,
+      "Good": 114,
+      "Moderate": 1793,
       "Unhealthy for Sensitive Groups": 0,
       "Unhealthy": 0,
       "Very Unhealthy": 0
     },
     "confusion_matrix": [
       [
-        78,
-        20,
+        93,
+        21,
         0,
         0,
         0
       ],
       [
-        80,
-        1695,
+        66,
+        1727,
         0,
         0,
         0
@@ -122,33 +122,33 @@
     ]
   },
   "champion": {
-    "accuracy": 0.9423384943940203,
-    "f1_macro": 0.7968840370156159,
+    "accuracy": 0.9465128474043,
+    "f1_macro": 0.8230081892629664,
     "f1_per_class": {
-      "Good": 0.625,
-      "Moderate": 0.9687680740312319,
+      "Good": 0.6751592356687898,
+      "Moderate": 0.9708571428571429,
       "Unhealthy for Sensitive Groups": 0.0,
       "Unhealthy": 0.0,
       "Very Unhealthy": 0.0
     },
     "support": {
-      "Good": 98,
-      "Moderate": 1775,
+      "Good": 114,
+      "Moderate": 1793,
       "Unhealthy for Sensitive Groups": 0,
       "Unhealthy": 0,
       "Very Unhealthy": 0
     },
     "confusion_matrix": [
       [
-        90,
+        106,
         8,
         0,
         0,
         0
       ],
       [
-        100,
-        1675,
+        94,
+        1699,
         0,
         0,
         0
